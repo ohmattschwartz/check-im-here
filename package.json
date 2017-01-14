@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "scripts": {
+    "deploy": "npm run build && surge ./public --domain check-im-here.ohmattschwartz.surge.sh",
+    "start": "webpack-dev-server",
+    "build": "rm -rf public && NODE_ENV=production webpack --optimize-minimize --progress --profile --colors"
+  }
+}
